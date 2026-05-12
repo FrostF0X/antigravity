@@ -91,7 +91,7 @@ RUN apt-get update && apt-get install -y \
 
 # Merge assets into the container.
 COPY assets/opt /opt
-COPY assets/. /
+COPY . /
 
 # Run TigerVNC and noVNC as services.
 RUN ln -s /etc/systemd/system/tigervnc.service /etc/systemd/system/multi-user.target.wants/ && \
